@@ -1,0 +1,7 @@
+--liquibase formatted sql
+--changeset junior:202505171304
+--comment: spring batch BATCH_JOB_SEQ
+
+CREATE SEQUENCE BATCH_JOB_SEQ MAXVALUE 9223372036854775807 NO CYCLE;
+
+--rollback DROP SEQUENCE IF EXISTS BATCH_JOB_SEQ;

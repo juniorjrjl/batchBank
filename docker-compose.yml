@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:17.4
+    environment:
+      POSTGRES_USER: batch-banck
+      POSTGRES_PASSWORD: batch-banck
+      POSTGRES_DB: batch-banck
+    ports:
+      - "5432:5432"
